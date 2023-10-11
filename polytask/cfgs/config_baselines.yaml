@@ -1,0 +1,62 @@
+defaults:
+  - _self_
+  - agent: finetune
+  - suite: metaworld #dmc, metaworld, kitchen
+  - override hydra/launcher: submitit_local
+
+# Root Dir
+root_dir: /media/ssd2/github/polytask-release
+data_dir: /media/exthdd/siddhant/polytask
+
+# replay buffer
+replay_buffer_size: 150000
+replay_buffer_num_workers: 2
+nstep: 3
+batch_size: 256
+# misc
+seed: 2
+device: cuda
+save_video: true
+save_train_video: false
+use_tb: true
+
+# Description
+description: 'Finetune'
+
+# experiment
+obs_type: 'pixels' # pixels, features
+experiment: ${description}_${suite.name}_${obs_type}_seed_${seed} # metaworld
+
+# expert dataset
+num_demos_per_task: 1 # 1 - metaworld, 100 - kitchen, 10 - dmc, 3 - robot
+num_train_frames_per_env: 250000
+expert_dataset: ${data_dir}/expert_demos/${suite.name}
+
+# Train encoder
+train_encoder: true
+
+# Inverse RL
+irl: false
+
+# Load weights
+load_bc: true
+multitask: false
+bc_weight: ${data_dir}/weights/${suite.name}_${obs_type}
+bc_weight_name: bc
+
+# Train with BC loss
+bc_regularize: true
+
+# Experiment logs
+exp_group: ${now:%Y.%m.%d}_${suite.name}
+exp_name: ${now:%H%M%S}_${experiment}
+hydra:
+  run:
+    dir: ./exp_local/${exp_group}/${exp_name}
+  sweep:
+    dir: ./exp_local/${now:%Y.%m.%d}/${now:%H%M%S}
+    subdir: ${hydra.job.num}
+  launcher:
+    tasks_per_node: 1
+    nodes: 1
+    submitit_folder: ./exp/${now:%Y.%m.%d}/${now:%H%M%S}_${experiment}/.slurm
