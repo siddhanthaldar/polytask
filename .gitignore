@@ -160,6 +160,7 @@ cython_debug/
 #.idea/
 
 # ignore
+*/__pycache__/
 */exp_local/
 */data/
 expert_demos/
