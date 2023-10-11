@@ -1,0 +1,6 @@
+
+defaults:
+  - hard
+  - _self_
+
+task_name: [coffee-pull-v2]

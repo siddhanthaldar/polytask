@@ -1,0 +1,6 @@
+
+defaults:
+  - medium
+  - _self_
+
+task_name: [door-open-v2]

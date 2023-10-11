@@ -1,0 +1,13 @@
+defaults:
+  - params
+  - _self_
+
+task_name: [RobotBoxOpenRight-v1]
+num_train_frames_bc: 5010
+pitch: 0
+roll: 90
+yaw: 180
+x_limit : [0.8, 2.6]
+y_limit : [-2.6, -1.0]
+z_limit: [0.39, 1.5]
+keep_gripper_closed: false

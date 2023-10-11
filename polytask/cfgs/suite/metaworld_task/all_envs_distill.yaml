@@ -1,0 +1,24 @@
+
+defaults:
+  - params
+  - _self_
+
+task_name:
+  - door-unlock-v2
+  - door-open-v2
+  - plate-slide-v2
+  - plate-slide-back-v2
+  - coffee-pull-v2
+  - coffee-button-v2
+  - button-press-topdown-v2
+  - button-press-topdown-wall-v2
+  - bin-picking-v2
+  - plate-slide-side-v2
+  - plate-slide-back-side-v2
+  - button-press-v2
+  - button-press-wall-v2
+  - hammer-v2
+  - drawer-close-v2
+  - drawer-open-v2
+
+num_train_frames_bc: 50010

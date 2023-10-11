@@ -1,0 +1,5 @@
+num_train_frames_bc: 200010
+stddev_schedule_bc: 0.1
+num_train_frames_distil: 100010
+num_train_frames_drq: 450010
+stddev_schedule_drq: 'linear(0.5,0.1,50000)'

@@ -1,0 +1,39 @@
+# @package suite
+defaults:
+  - _self_
+  - kitchen_task@_global_: all
+
+suite: kitchen
+name: 'kitchen'
+task:
+  - task1
+  - task2
+  - task3
+  - task4
+  - task6
+  - task7
+
+# task settings
+frame_stack: 1
+action_repeat: 1
+discount: 0.99
+hidden_dim: 1024
+
+# train settings
+num_train_frames: 400100 #24100000
+num_seed_frames: 12000 #72000
+
+# eval
+eval_every_frames: 20000 #300000
+num_eval_episodes: 10
+
+# snapshot
+save_snapshot: true
+
+task_make_fn:
+  _target_: suite.kitchen.make
+  name: ${task_name}
+  frame_stack: ${suite.frame_stack}
+  action_repeat: ${suite.action_repeat}
+  seed: ${seed}
+  task: ${suite.task}

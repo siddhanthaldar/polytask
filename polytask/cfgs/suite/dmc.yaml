@@ -1,0 +1,32 @@
+# @package suite
+defaults:
+  - _self_
+  - dmc_task@_global_: cheetah_run
+
+suite: dmc
+name: 'dmc'
+task_id: [1,2,3,4,5,6,7,8,9,10]
+
+# task settings
+frame_stack: 3
+action_repeat: 2
+discount: 0.99
+hidden_dim: 1024
+
+# train settings
+num_train_frames: 501000 #5000100
+num_seed_frames: 12000 #120000
+# eval
+eval_every_frames: 20000 #500000
+num_eval_episodes: 10
+
+# snapshot
+save_snapshot: true
+
+task_make_fn:
+  _target_: suite.dmc.make
+  name: ${task_name}
+  task_id: ${suite.task_id}
+  frame_stack: ${suite.frame_stack}
+  action_repeat: ${suite.action_repeat}
+  seed: ${seed}

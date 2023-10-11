@@ -1,0 +1,19 @@
+defaults:
+  - params
+  - _self_
+
+task_name:
+- RobotInsertPegGreen-v1
+- RobotBoxOpen-v1
+- RobotPour2D-v1
+- RobotInsertPegYellow-v1
+- RobotReach-v1
+- RobotDrawerClose-v1
+
+num_train_frames_bc: 5010
+pitch: 0
+roll: 90
+x_limit : [0.8, 2.6]
+y_limit : [1.0, 2.6]
+z_limit: [0.39, 1.5]
+keep_gripper_closed: false

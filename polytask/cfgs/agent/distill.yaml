@@ -1,0 +1,15 @@
+# @package agent
+_target_: agent.distill.DistillAgent
+obs_shape: ??? # to be specified later
+action_shape: ??? # to be specified later
+device: ${device}
+lr: 5e-5
+use_tb: ${use_tb}
+hidden_dim: ${suite.hidden_dim}
+stddev_schedule: 0.1
+stddev_clip: 0.3
+augment: true
+obs_type: ${obs_type}
+goal_modality: ${goal_modality}
+goal_dim: ${goal_dim}
+pcgrad: false

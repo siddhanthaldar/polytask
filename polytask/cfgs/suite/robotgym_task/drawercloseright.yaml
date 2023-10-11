@@ -1,0 +1,13 @@
+defaults:
+  - params
+  - _self_
+
+task_name: [RobotDrawerCloseRight-v1]
+num_train_frames_bc: 2010
+pitch: 0
+roll: 180
+yaw: 0
+x_limit : [0.6, 3.0]
+y_limit : [-1.6, -0.1]
+z_limit: [0.45, 1.5]
+keep_gripper_closed: false
