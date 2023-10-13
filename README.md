@@ -4,7 +4,7 @@
 
 This is a repository containing the code for the paper **"PolyTask: Learning Unified Policies through Behavior Distillation"**.
 
-![main_figure](https://github.com/siddhanthaldar/polytask/assets/25313941/815a5186-14a5-4dd8-a31a-33336f4f9e18)
+![main_figure](https://github.com/siddhanthaldar/polytask/assets/25313941/debaa96a-94aa-44a9-a615-b5fb42023038)
 
 ## Download expert demonstrations, weights, replay buffers and environment libraries [[link]](https://drive.google.com/drive/folders/1_hvX7y4pIASdPzmKu9mODh5a__wVY1t8?usp=sharing)
 The link contains the following:
