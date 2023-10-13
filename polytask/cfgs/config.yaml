@@ -5,8 +5,8 @@ defaults:
   - override hydra/launcher: submitit_local
 
 # Root Dir
-root_dir: /media/ssd2/github/polytask-release
-data_dir: /media/exthdd/siddhant/polytask
+root_dir: /path/to/root/dir/polytask
+data_dir: /path/to/data/dir/
 
 # replay buffer
 replay_buffer_size: 150000
