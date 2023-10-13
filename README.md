@@ -1,8 +1,8 @@
 # PolyTask: Learning Unified Policies through Behavior Distillation
 
-[[arXiv]]() [[Project page]](https://poly-task.github.io/)
+[[arXiv]](https://arxiv.org/abs/2310.08573) [[Project page]](https://poly-task.github.io/)
 
-This is a repository containing the code for the paper [PolyTask: Learning Unified Policies through Behavior Distillation]().
+This is a repository containing the code for the paper **"PolyTask: Learning Unified Policies through Behavior Distillation"**.
 
 ![main_figure](https://github.com/siddhanthaldar/polytask/assets/25313941/815a5186-14a5-4dd8-a31a-33336f4f9e18)
 
