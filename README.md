@@ -1,7 +1,10 @@
 # PolyTask: Learning Unified Policies through Behavior Distillation
 
-This is a repository containing the code for the paper [PolyTask: Learning Unified Policies through Behavior Distillation]().
+[[arXiv]](https://arxiv.org/abs/2310.08573) [[Project page]](https://poly-task.github.io/)
 
+This is a repository containing the code for the paper **"PolyTask: Learning Unified Policies through Behavior Distillation"**.
+
+![main_figure](https://github.com/siddhanthaldar/polytask/assets/25313941/debaa96a-94aa-44a9-a615-b5fb42023038)
 
 ## Download expert demonstrations, weights, replay buffers and environment libraries [[link]](https://drive.google.com/drive/folders/1_hvX7y4pIASdPzmKu9mODh5a__wVY1t8?usp=sharing)
 The link contains the following:
@@ -95,7 +98,7 @@ The code for baseline algorithms is available in the `baselines` branch of this 
 @article{haldar2023polytask,
          title={PolyTask: Learning Unified Policies through Behavior Distillation},
          author={Haldar, Siddhant and Pinto, Lerrel},
-         journal={arXiv preprint},
+         journal={arXiv preprint arXiv:2310.08573},
          year={2023}
         } 
 ```
