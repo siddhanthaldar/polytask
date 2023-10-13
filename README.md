@@ -98,7 +98,7 @@ The code for baseline algorithms is available in the `baselines` branch of this 
 @article{haldar2023polytask,
          title={PolyTask: Learning Unified Policies through Behavior Distillation},
          author={Haldar, Siddhant and Pinto, Lerrel},
-         journal={arXiv preprint},
+         journal={arXiv preprint arXiv:2310.08573},
          year={2023}
         } 
 ```
